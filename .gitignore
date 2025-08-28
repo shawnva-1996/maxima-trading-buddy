@@ -1,0 +1,22 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependency directories
+node_modules/
+
+# Netlify folder
+# This directory contains build outputs and other state.
+.netlify/
+
+# Environment variables
+# Don't commit .env files as they may contain sensitive information.
+# Instead, use Netlify's environment variable settings in the UI.
+.env
+.env.*
+!/.env.example
+
+# Build output
+dist
+build
+
+# Log files
+*.log

@@ -1,0 +1,36 @@
+.
+├─ netlify.toml
+├─ package.json # add deps/scripts below or merge
+├─ vite.config.js # simple react plugin
+├─ tailwind.config.js # already created, ensure content matches
+├─ postcss.config.js # already created by tailwind init -p
+├─ .env.sample
+├─ /netlify
+│ └─ /functions
+│ ├─ decide.js
+│ ├─ news.js
+│ ├─ calendar.js
+│ ├─ macro.js
+│ ├─ prices.js
+│ └─ _lib
+│ ├─ systemPrompt.js
+│ ├─ calendarRules.js
+│ └─ cache.js
+├─ /src
+│ ├─ App.jsx
+│ ├─ main.jsx # from Vite (kept)
+│ ├─ index.css # add Tailwind directives
+│ ├─ /components
+│ │ ├─ TradingPanel.jsx
+│ │ ├─ DecisionPanel.jsx
+│ │ ├─ TradeForm.jsx
+│ │ ├─ StatsDashboard.jsx
+│ │ └─ BacktestPanel.jsx
+│ └─ /lib
+│ ├─ firebase.js
+│ ├─ ta.js
+│ ├─ backtest.js
+│ ├─ rateLimitCache.js
+│ └─ time.js
+└─ /public
+└─ favicon.svg (optional)

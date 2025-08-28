@@ -1,0 +1,14 @@
+[build]
+command = "npm run build"
+publish = "dist"
+functions = "netlify/functions"
+
+[dev]
+framework = "vite"
+
+[[headers]]
+for = "/api/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"
+Access-Control-Allow-Headers = "*"
+Access-Control-Allow-Methods = "GET, POST, OPTIONS"
